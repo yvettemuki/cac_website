@@ -13,7 +13,7 @@ class Home extends Component {
     render() {
       return(
         <div className="home">
-          <Navbar collapseOnSelect expand="lg" bg="transparents" variant="dark" Style="border-radius:0">
+          <Navbar className="navbar-bg" collapseOnSelect expand="lg" bg="transparents" variant="dark" Style="border-radius:0">
             <div className="collapse-block">
             <Navbar.Brand href="#home">
               <img

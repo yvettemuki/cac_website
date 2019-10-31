@@ -60,6 +60,9 @@
   .navbar {
     padding: 10px 20px;
   }
+  .navbar-bg {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
 }
 @media (min-width: 300px) and (max-width: 759px){
   html {
@@ -93,6 +96,9 @@
   }
   .navbar {
     padding: 10px 20px;
+  }
+  .navbar-bg {
+    background-color: rgba(0, 0, 0, 0.9);
   }
 }
 
