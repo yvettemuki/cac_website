@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import {Navbar, Jumbotron, Nav, Container, Row, Col, Card, Button, NavbarCollapse} from 'react-bootstrap';
 import styles from '../stylesheet/Home.css';
-import cac_home_logo from '../assets/cac_home_logo.png';
+import cac_home_logo from '../assets/cac_home_logo_color.png';
 import thoughtworks_logo from '../assets/thoughtworks_logo.png'
 import training_model from '../assets/training_model.png'
 import sub_brand_green from '../assets/sub_brand_green.png'
@@ -14,17 +14,18 @@ class Home extends Component {
       return(
         <div className="home">
           <Navbar collapseOnSelect expand="lg" bg="transparents" variant="dark" Style="border-radius:0">
+            <div className="collapse-block">
             <Navbar.Brand href="#home">
               <img
                 alt=""
                 src={cac_home_logo}
-                height="40px"
-                Style="position:relative;bottom:5px"
-                className="d-inline-block"
+                className="d-inline-block home-logo"
               />{'  '}
-              <span Style="font-size:20px"><strong>C</strong>hina <strong>A</strong>gile <strong>C</strong>oach</span>
+              <span className="nav-title"><strong>C</strong>hina <strong>A</strong>gile <strong>C</strong>oach</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            </div>
+            
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ml-auto nav-link">
                 <Nav.Link href="#home">首页</Nav.Link>
@@ -62,9 +63,9 @@ class Home extends Component {
               <Col Style="color:#000000;text-align:center;font-size:10px">COURSE MODEL</Col>
               </Row>
               <Row className="course-model-content">
-                <Col lg="4" md="12" sm="12" Style="color:#000000;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</Col>
+                <Col lg="4" md="12" sm="12" Style="color:#000000;margin-bottom:10%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</Col>
                 <Col lg="8" md="12" sm="12" className="course-model-img">
-                  <img src={training_model} Style="width:55%"/>
+                  <img className="training-model-img" src={training_model}/>
                 </Col>
               </Row>
             </Col>

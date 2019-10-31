@@ -1,8 +1,5 @@
 .App {
     text-align: center;
-  }
-.navbar-brand {
-  padding: 10px!important;
 }
 .nav-link {
   font-size: 15px;
@@ -10,22 +7,8 @@
 .navbar_toggler {
   border-color: transparent;
 }
-.logo {
-  height: 50px;
-  width: 50px;
-  background-image: url(../assets/cac_logo.png);
-  background-size: 100%;
-}
 .font-title {
   font-size: 15px
-}
-.page_1_container {
-  background-image: url(../assets/home_bg_black.png);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-.page_1_content {
-  height: 1200px;
 }
 .jumbotron {
   display: flex;
@@ -39,7 +22,7 @@
   border-radius: 0;
   z-index: -1;
   
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .home-logo-img {
@@ -107,4 +90,6 @@
 .course-model-img {
   
 }
+
+
 
