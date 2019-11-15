@@ -1,5 +1,5 @@
 
-@media (min-width: 1024px) and (max-width: 2400px) {
+@media (min-width: 992px) and (max-width: 2400px) {
   html {
     font-size: 0.625rem!important; /* 1rem = 10px */
   }
@@ -27,7 +27,7 @@
     padding: 10px 40px;
   }
 }
-@media (min-width: 760px) and (max-width: 1023px){
+@media (min-width: 577px) and (max-width: 991px){
   html {
     font-size: 0.625rem!important; /* 1rem = 10px */
   }
@@ -63,8 +63,11 @@
   .navbar-bg {
     background-color: rgba(0, 0, 0, 0.9);
   }
+  .navbar-collapse.collapse {
+    display: none;
+  }
 }
-@media (min-width: 300px) and (max-width: 759px){
+@media (min-width: 300px) and (max-width: 576px){
   html {
     font-size: 0.5rem!important/* 1rem = 10px */
   }
@@ -101,7 +104,9 @@
     background-color: rgba(0, 0, 0, 0.9);
   }
 }
-
+button {
+  outline: none!important;
+}
 .nav-title {
   font-size: 2rem;
 }
