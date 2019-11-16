@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './pages/App';  //这里是组件 可以作为html里面的自定义标签使用
 import About from './pages/Home';
 import './stylesheet/index.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+
 
 ReactDOM.render(
   <App />,
